@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Miao", "Miao\Miao.csproj", "{B9DA04B1-4BC5-4488-818E-EF144C89AD29}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B9DA04B1-4BC5-4488-818E-EF144C89AD29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9DA04B1-4BC5-4488-818E-EF144C89AD29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9DA04B1-4BC5-4488-818E-EF144C89AD29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9DA04B1-4BC5-4488-818E-EF144C89AD29}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1127CB26-644D-42BF-947E-BDC1CF85366B}
+	EndGlobalSection
+EndGlobal
