@@ -1,6 +1,6 @@
 namespace Miao;
 
-public class Questao;
+public class Questao
 public string RespostaErrada {get; set;}
 public string RespostaCorreta {get; set;}
 public string pergunta {get; set;}
