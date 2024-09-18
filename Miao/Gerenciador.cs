@@ -25,9 +25,9 @@ public class Gerenciador
     }
       public void ProximaQuestao()
       {
-        var NumRandomico = Random.Shared.Next(0,ListaQuestoes.Count - 1);
+        var NumRandomico = Random.Shared.Next(0,ListaQuestoes.Count);
         while(ListaQuestoesRespondidas.Contains(NumRandomico))
-         NumRandomico = Random.Shared.Next(0, ListaQuestoes.Count -1);
+         NumRandomico = Random.Shared.Next(0, ListaQuestoes.Count);
          ListaQuestoesRespondidas.Add(NumRandomico);
          QuestaoCorrente = ListaQuestoes[NumRandomico];
          QuestaoCorrente.Desenha();
