@@ -1,6 +1,9 @@
 namespace Miao;
 
 public class Questao
+
+    public void ConfiguraDesenho(Label labelPergunta,Button BTNResposta01,Button BTNResposta02,Button BTNResposta03,Button BTNResposta04, Button BTNResposta05)
+
 public string RespostaErrada {get; set;}
 public string RespostaCorreta {get; set;}
 public string pergunta {get; set;}
@@ -35,4 +38,5 @@ public bool VerificaResposta(int rr)
         BTNIncorreto.BackgroundColor = Colors.Red;
         return false;
     }
+
 }
