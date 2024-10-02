@@ -4,7 +4,7 @@ namespace Miao;
 
 public class RetiraErradas : IAjuda
 {
-    public void RealizaAjuda(Questao questao)
+    public override void RealizaAjuda(Questao questao)
     {
         Switch(Questao.RespostaCorreta)
      {
