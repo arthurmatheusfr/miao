@@ -21,7 +21,8 @@ public class Gerenciador
     {
         CriarQuestoes(labelPergunta, BTNResposta01, BTNResposta02, BTNResposta03, BTNResposta04, BTNResposta05);
     }
-    void CriarQuestoes(Label labelPergunta,Button BTNResposta01,Button BTNResposta02,Button BTNResposta03,Button BTNResposta04, Button BTNResposta05)
+    void CriarQuestoes(Label labelPergunta,
+    ,)
     {
         var Q1 = new Questao();
         Q1.pergunta = "Quanto é 2+2??????????";
@@ -114,13 +115,13 @@ public class Gerenciador
         Q9.ConfigurarDesenho(labelPergunta, BTNResposta01, BTNResposta02, BTNResposta03, BTNResposta04, BTNResposta05);
         ListaQuestoes.Add(Q9);
        var Q10 = new Questao();
-        Q10.pergunta = "Qual é o deserto mais árido do mundo?";
-        Q10.Resposta01 = "Deserto do Saara";
-        Q10.Resposta02 = "Deserto de Atacama";
-        Q10.Resposta03 = "Deserto de Gobi";
-        Q10.Resposta04 = "Deserto da Arábia";
-        Q10.Resposta05 = "Egito";
-        Q10.RespostaCorreta = 2;
+        Q10.pergunta = "Qual a fórmula da velocidade média?";
+        Q10.Resposta01 = "V = S / T";
+        Q10.Resposta02 = "V = T / S";
+        Q10.Resposta03 = "V = S + T";
+        Q10.Resposta04 = "V = S - T";
+        Q10.Resposta05 = "V = S * T";
+        Q10.RespostaCorreta = 1;
         Q10.ConfigurarDesenho(labelPergunta, BTNResposta01, BTNResposta02, BTNResposta03, BTNResposta04, BTNResposta05);
         ListaQuestoes.Add(Q10);
        var Q11 = new Questao();
