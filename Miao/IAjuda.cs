@@ -7,7 +7,7 @@ public abstract class IAjuda
     Button BTNResposta04;
     Button BTNResposta05;
     Frame FrameAjuda;
-    public void ConfigurarDesenho(Button BTNResposta01,Button BTNResposta02,Button BTNResposta03,Button BTNResposta04, Button BTNResposta05)
+    public void ConfigurarDesenho(Button BTNResposta01, Button BTNResposta02, Button BTNResposta03, Button BTNResposta04, Button BTNResposta05)
     {
         this.BTNResposta01 = BTNResposta01;
         this.BTNResposta02 = BTNResposta02;
@@ -17,7 +17,7 @@ public abstract class IAjuda
     }
     public void ConfigurarDesenho(Frame FrameAjuda)
     {
-       this.FrameAjuda = FrameAjuda;
+        this.FrameAjuda = FrameAjuda;
     }
     public abstract void RealizaAjuda(Questao questao);
 }

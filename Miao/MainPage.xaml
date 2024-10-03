@@ -2,42 +2,62 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Miao.MainPage"
-              BackgroundColor="LightBlue">
+             BackgroundColor="LightBlue">
 
 
-<StackLayout Padding="10" Spacing="20">
-        
+    <StackLayout Padding="10"
+            Spacing="20">
+
 
         <Image Source="logo.png"
                HorizontalOptions="Center"
                HeightRequest="80"/>
-        
-    
+
+
         <Label Text="Pergunta"
+               x:Name="labelPergunta" 
                FontSize="Large"
                HorizontalOptions="Center"
                VerticalOptions="Start"
                BackgroundColor="LightYellow"
                Padding="10"/>
-        
+
         <StackLayout Spacing="10">
-            <Button Text="1 - Resposta A" 
-            BackgroundColor="LightGray"/>
-            <Button Text="2 - Resposta B" 
-            BackgroundColor="LightGray"/>
-            <Button Text="3 - Resposta C" 
-            BackgroundColor="LightGray"/>
-            <Button Text="4 - Resposta D" 
-            BackgroundColor="LightGray"/>
-            <Button Text="5 - Resposta E" 
-            BackgroundColor="LightGray"/>
+            <Button Text="1 - Resposta A"
+                    BackgroundColor="LightGray"
+                    Clicked="OnBTNResp01Clicked"
+                    x:Name="BTNResposta01"/>
+            <Button Text="2 - Resposta B"
+                    BackgroundColor="LightGray"
+                    Clicked="OnBTNResp02Clicked"
+                    x:Name="BTNResposta02"/>
+            <Button Text="3 - Resposta C"
+                    BackgroundColor="LightGray"
+                    Clicked="OnBTNResp03Clicked"
+                    x:Name="BTNResposta03"/>
+            <Button Text="4 - Resposta D"
+                    BackgroundColor="LightGray"
+                    Clicked="OnBTNResp04Clicked"
+                    x:Name="BTNResposta04"/>
+            <Button Text="5 - Resposta E"
+                    BackgroundColor="LightGray"
+                    Clicked="OnBTNResp05Clicked"
+                    x:Name="BTNResposta05"/>
         </StackLayout>
-        
-   
-        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="10">
-            <BoxView Color="LightYellow" WidthRequest="50" HeightRequest="50"/>
-            <BoxView Color="LightYellow" WidthRequest="50" HeightRequest="50"/>
-            <BoxView Color="LightYellow" WidthRequest="50" HeightRequest="50"/>
+
+
+        <StackLayout Orientation="Horizontal"
+                HorizontalOptions="Center"
+                Spacing="10">
+            <BoxView Color="LightYellow"
+                    WidthRequest="50"
+                    HeightRequest="50"/>
+            <BoxView Color="LightYellow"
+                    WidthRequest="50"
+                    HeightRequest="50"/>
+            <BoxView Color="LightYellow"
+                    WidthRequest="50"
+                    HeightRequest="50"/>
         </StackLayout>
 
     </StackLayout>

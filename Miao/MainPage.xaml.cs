@@ -2,32 +2,32 @@
 
 public partial class MainPage : ContentPage
 {
-	Gerenciador gerenciador;
+    Gerenciador gerenciador;
     public MainPage()
     {
         InitializeComponent();
         gerenciador = new Gerenciador(labelPergunta, BTNResposta01, BTNResposta02, BTNResposta03, BTNResposta04, BTNResposta05);
-        gerenciador = ProximaPergunta();
+        gerenciador.ProximaQuestao();
     }
     void OnBTNResp01Clicked(object sender, EventArgs args)
     {
-        Gerenciador.VerificaCorreto(1);
+        gerenciador.VerificaResposta(1);
     }
     void OnBTNResp02Clicked(object sender, EventArgs args)
     {
-        Gerenciador.VerificaCorreto(2);
+        gerenciador.VerificaResposta(2);
     }
     void OnBTNResp03Clicked(object sender, EventArgs args)
     {
-        Gerenciador.VerificaCorreto(3);
+        gerenciador.VerificaResposta(3);
     }
     void OnBTNResp04Clicked(object sender, EventArgs args)
     {
-        Gerenciador.VerificaCorreto(4);
+        gerenciador.VerificaResposta(4);
     }
     void OnBTNResp05Clicked(object sender, EventArgs args)
     {
-        Gerenciador.VerificaCorreto(5);
+        gerenciador.VerificaResposta(5);
     }
 }
 

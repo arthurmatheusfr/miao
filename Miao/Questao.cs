@@ -1,42 +1,62 @@
 namespace Miao;
 
-public class Questao
-
-    public void ConfiguraDesenho(Label labelPergunta,Button BTNResposta01,Button BTNResposta02,Button BTNResposta03,Button BTNResposta04, Button BTNResposta05)
-
-public string RespostaErrada {get; set;}
-public string RespostaCorreta {get; set;}
-public string pergunta {get; set;}
-private button QualBTN(int rr)
+public partial class Questao
 {
-    if(rr == 1)
-    return BotaoResposta01;
-    else if (rr == 2)
-    return BotaoResposta02;
-    else if (rr == 3)
-    return BotaoResposta03;
-    else if (rr == 4)
-    return BotaoResposta04;
-    else if (rr == 5)
-    return BotaoResposta05;
-    else
-    return null;
-}
-public bool VerificaResposta(int rr)
-{
-    if (RespostaCerta == rr)
+
+    public int RespostaCorreta;
+    public int NivelResposta;
+
+    public string pergunta;
+    public string Resposta01;
+    public string Resposta02;
+    public string Resposta03;
+    public string Resposta04;
+    public string Resposta05;
+
+    private Label LabelPergunta;
+    
+    private Button ButtonResposta1;
+    private Button ButtonResposta2;
+    private Button ButtonResposta3;
+    private Button ButtonResposta4;
+    private Button ButtonResposta5;
+
+    public void ConfiguraDesenho(Label labelPergunta, Button BTNResposta01, Button BTNResposta02, Button BTNResposta03, Button BTNResposta04, Button BTNResposta05)
     {
-        var BTN = QualBTN(rr);
-        BTN BackgroundColor = Colors.Green;
-        return true;
-    }
-    else
-    {
-        var BTNCorreto = QualBTN(RespostaCerta);
-        var BTNIncorreto = QualBTN(rr);
-        BTNCorreto.BackgroundColor = Colors.Yellow;
-        BTNIncorreto.BackgroundColor = Colors.Red;
-        return false;
+
     }
 
+    private Button QualBTN(int rr)
+    {
+        if (rr == 1)
+            return ButtonResposta1;
+        else if (rr == 2)
+            return ButtonResposta2;
+        else if (rr == 3)
+            return ButtonResposta3;
+        else if (rr == 4)
+            return ButtonResposta4;
+        else if (rr == 5)
+            return ButtonResposta5;
+        else
+            return null;
+    }
+    public bool VerificaResposta(int rr)
+    {
+        if (RespostaCorreta == rr)
+        {
+            var BTN = QualBTN(rr);
+            BTN.BackgroundColor = Colors.Green;
+            return true;
+        }
+        else
+        {
+            var BTNCorreto = QualBTN(RespostaCorreta);
+            var BTNIncorreto = QualBTN(rr);
+            BTNCorreto.BackgroundColor = Colors.Yellow;
+            BTNIncorreto.BackgroundColor = Colors.Red;
+            return false;
+        }
+
+    }
 }
