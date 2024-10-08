@@ -30,4 +30,25 @@ public partial class MainPage : ContentPage
         gerenciador.VerificaResposta(5);
     }
 }
+int Pular = 0;
+    void PularClicked(object s, EventArgs e)
+    {
+        if (Pular == 2){
+             (s as Button).IsVisible = false;
+        }
+       else
+       {
+         gerenciador.ProximaQuestao();
+         Pular ++;
+       }
+       if (Pular == 0)
+       {
+         pulinhos == "Pular X2";
+       }
+       if (Pular == 1)
+       {
+         pulinhos == "Pular X1";
+       }
+   
+    }
 
